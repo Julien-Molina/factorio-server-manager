@@ -12,7 +12,7 @@ script:
 jobs:
   include:
     - stage: deploy
-      go: 1.12.x
+      go: 1.x
       language: minimal
       before_install:
         - docker build -f "docker/Dockerfile-build" -t factorio-server-manager docker
